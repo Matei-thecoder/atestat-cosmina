@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Romanian Flowers | Coquette Flowers</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <style>
+    .flower-section {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      background: rgba(255, 250, 252, 0.85);
+      border-radius: 20px;
+      margin: 2rem 0;
+      padding: 2rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    }
+    .flower-section img {
+      width: 280px;
+      height: auto;
+      border-radius: 20px;
+      object-fit: cover;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .flower-text {
+      flex: 1;
+      padding: 1rem;
+    }
+    .flower-text h2 {
+      color: #d48ca3;
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+    .flower-text p {
+      margin-bottom: 1rem;
+      line-height: 1.7;
+    }
+    /* Alternate layouts */
+    .flower-section.reverse {
+      flex-direction: row-reverse;
+    }
+    @media (max-width: 768px) {
+      .flower-section,
+      .flower-section.reverse {
+        flex-direction: column;
+        text-align: center;
+      }
+      .flower-section img {
+        margin-bottom: 1rem;
+      }
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #d48ca3;
+      padding: 10px 20px;
+      position: relative;
+    }
+
+    .navbar-links {
+      display: flex;
+      align-items: center;
+    }
+
+    .navbar-links a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 1.1rem;
+      padding: 8px 12px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .navbar-links a:hover {
+      background-color: #d48ca3;
+    }
+
+    .navbar-toggle {
+      display: none;
+      font-size: 30px;
+      background: none;
+      border: none;
+      color: white;
+      cursor: pointer;
+    }
+
+    @media screen and (max-width: 768px) {
+      .navbar-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #d48ca3;
+        position: absolute;
+        top: 60px;
+        left: 0;
+      }
+
+      .navbar-links.active {
+        display: flex;
+      }
+
+      .navbar-links a {
+        margin: 10px 0;
+        width: 100%;
+        text-align: center;
+      }
+
+      .navbar-toggle {
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <nav>
+        <button class="navbar-toggle" id="navbar-toggle">
+            ☰
+          </button>
+        
+          <!-- Links -->
+          <div class="navbar-links" id="navbar-links">
+            <a href="index.html">Home</a>
+            <a href="romanian-flowers.html">Romanian Flowers</a>
+            <a href="roses.html">Rose</a>
+            <a href="sunflower.html">Sunflower</a>
+            <a href="orchid.html">Orchid</a>
+            <a href="tulip.html">Tulip</a>
+          </div>
+        </div>
+      </nav>
+      </nav>
+
+  <header>
+    <h1>Romanian Flowers</h1>
+    <p>Symbols of beauty, purity, and eternal tradition 🌸</p>
+  </header>
+
+  <main>
+    <p>Romania’s wild landscapes bloom with unique flowers, rich in history, legend, and cultural meaning. Let us step gently into this enchanted botanical world:</p>
+
+    <div class="flower-section">
+      <img src="images/peony.jpg" alt="Romanian Peony">
+      <div class="flower-text">
+        <h2>➤ Bujorul Românesc (Romanian Peony)</h2>
+        <p>The Romanian peony is more than a flower — it is a national symbol of strength, sacrifice, and honor. Growing wild in protected reserves like Zau de Câmpie, the peony’s vibrant red symbolizes the blood of heroes and the passion of Romanian spirit.</p>
+        <p>In ancient traditions, brides would carry peony flowers as signs of love, beauty, and prosperity. Legends say that the peony’s round, full blooms mirror the sun's generosity, bringing fortune to those who cherish them. During spring festivals, fields of wild peonies paint entire hillsides in mesmerizing scarlet waves.</p>
+      </div>
+    </div>
+
+    <div class="flower-section reverse">
+      <img src="images/sanziene.jpg" alt="Sânziene Flowers">
+      <div class="flower-text">
+        <h2>➤ Sânzienele (Lady’s Bedstraw)</h2>
+        <p>Soft golden flowers of midsummer dreams, sânzienele are deeply woven into Romanian mythology. During the magical Night of Sânziene, it is said that the skies open, fairies descend to dance among the fields, and flowers whisper secrets of love and healing.</p>
+        <p>Girls weave sânziene crowns and place them under pillows, hoping to dream of their destined love. Villagers also hang the garlands on gates and windows, believing they offer protection against evil spirits and storms. Their scent carries the very essence of Romanian summer magic.</p>
+      </div>
+    </div>
+
+    <div class="flower-section">
+      <img src="images/lilac.jpg" alt="Lilac Flowers">
+      <div class="flower-text">
+        <h2>➤ Liliacul (Lilac)</h2>
+        <p>With delicate hues from lavender to deep purple, lilac blossoms fill Romanian villages with a fragrance of innocence and nostalgia. Historically, lilac bouquets were given as tokens of first love and springtime admiration.</p>
+        <p>In folklore, it is said that planting a lilac bush near your home brings luck, purity, and a happy marriage. The fleeting blooming season — just a few precious weeks — reminds us to cherish moments of beauty before they pass.</p>
+      </div>
+    </div>
+
+    <div class="flower-section reverse">
+      <img src="images/edelweiss.jpg" alt="Edelweiss Flower">
+      <div class="flower-text">
+        <h2>➤ Floarea de colț (Edelweiss)</h2>
+        <p>Hidden high in the rugged Carpathians, Floarea de colț whispers stories of fearless mountaineers and eternal love. Picking this rare flower once meant a proof of devotion, as reaching it often required a daring climb through dangerous cliffs.</p>
+        <p>Its velvet petals, shaped like stars, are seen as a heavenly blessing. Because of its rarity, the flower is strictly protected, symbolizing both the fragile beauty of nature and the resilience of Romanian soul against the harshness of life.</p>
+      </div>
+    </div>
+
+    <button onclick="showFlowerQuote()">Click for a Flower Quote</button>
+    <p id="flower-quote" style="margin-top: 1.5rem; font-style: italic;"></p>
+  </main>
+
+  <footer>
+    Made with love 🌸 | Coquette Flowers
+  </footer>
+
+  <script>
+    function showFlowerQuote() {
+      const quotes = [
+        "Flowers are the purest language of nature.",
+        "In every Romanian blossom lives a story untold.",
+        "Let the mountains and meadows bloom in your heart.",
+        "Each petal carries a memory of old songs and summer winds."
+      ];
+      const random = Math.floor(Math.random() * quotes.length);
+      document.getElementById('flower-quote').innerText = quotes[random];
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+    const toggleButton = document.getElementById('navbar-toggle');
+    const navbarLinks = document.getElementById('navbar-links');
+
+    toggleButton.addEventListener('click', function() {
+      navbarLinks.classList.toggle('active');
+    });
+  });
+
+  </script>
+</body>
+</html>

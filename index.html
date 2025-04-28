@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Coquette Flowers</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <style>
+    body {
+      background: url('flowers-background.jpg') no-repeat center center fixed;
+      background-size: cover;
+      backdrop-filter: brightness(95%) blur(1px);
+    }
+    main {
+      background: rgba(255, 250, 252, 0.8);
+      border-radius: 20px;
+      padding: 2rem;
+      margin: 2rem;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #d48ca3;
+      padding: 10px 20px;
+      position: relative;
+    }
+
+    .navbar-links {
+      display: flex;
+      align-items: center;
+    }
+
+    .navbar-links a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 1.1rem;
+      padding: 8px 12px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .navbar-links a:hover {
+      background-color: #d48ca3;
+    }
+
+    .navbar-toggle {
+      display: none;
+      font-size: 30px;
+      background: none;
+      border: none;
+      color: white;
+      cursor: pointer;
+    }
+
+    @media screen and (max-width: 768px) {
+      .navbar-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #d48ca3;
+        position: absolute;
+        top: 60px;
+        left: 0;
+      }
+
+      .navbar-links.active {
+        display: flex;
+      }
+
+      .navbar-links a {
+        margin: 10px 0;
+        width: 100%;
+        text-align: center;
+      }
+
+      .navbar-toggle {
+        display: block;
+      }
+    }
+  
+  </style>
+</head>
+<body>
+  <nav>
+    <nav>
+        <button class="navbar-toggle" id="navbar-toggle">
+            ☰
+          </button>
+        
+          <!-- Links -->
+          <div class="navbar-links" id="navbar-links">
+            <a href="index.html">Home</a>
+            <a href="romanian-flowers.html">Romanian Flowers</a>
+            <a href="roses.html">Rose</a>
+            <a href="sunflower.html">Sunflower</a>
+            <a href="orchid.html">Orchid</a>
+            <a href="tulip.html">Tulip</a>
+          </div>
+        </div>
+      </nav>
+  </nav>
+
+  <header>
+    <h1>Coquette Flowers</h1>
+    <p>Bloom with elegance ✿</p>
+  </header>
+
+  <main>
+    <p>Welcome to a delicate journey through the most beloved flowers of Romania and the world. Discover the timeless beauty, history, and symbolism of blooms that have captured hearts across cultures and generations.</p>
+    <button onclick="showQuote()">Click for a Flower Quote</button>
+    <p id="quote" style="margin-top: 1rem; font-style: italic;"></p>
+  </main>
+
+  <footer>
+    Made with love 🌸  |  Coquette Flowers
+  </footer>
+
+  <script>
+    function showQuote() {
+      const quotes = [
+        "Where flowers bloom, so does hope.",
+        "Every flower is a soul blossoming in nature.",
+        "Flowers are the music of the ground.",
+        "Let your dreams bloom like flowers."
+      ];
+      const random = Math.floor(Math.random() * quotes.length);
+      document.getElementById('quote').innerText = quotes[random];
+    }
+
+    
+  // Get the hamburger menu button and the navbar links container
+  document.addEventListener('DOMContentLoaded', function() {
+    const toggleButton = document.getElementById('navbar-toggle');
+    const navbarLinks = document.getElementById('navbar-links');
+
+    toggleButton.addEventListener('click', function() {
+      navbarLinks.classList.toggle('active');
+    });
+  });
+
+  </script>
+</body>
+</html>

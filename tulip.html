@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tulip | Coquette Flowers</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .section {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 40px;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+    .section img {
+      width: 45%;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    .section-text {
+      width: 45%;
+      font-size: 1.1rem;
+      color: #333;
+    }
+    @media (max-width: 768px) {
+      .section {
+        flex-direction: column;
+        text-align: center;
+      }
+      .section img, .section-text {
+        width: 90%;
+      }
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #d48ca3;
+      padding: 10px 20px;
+      position: relative;
+    }
+
+    .navbar-links {
+      display: flex;
+      align-items: center;
+    }
+
+    .navbar-links a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 1.1rem;
+      padding: 8px 12px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .navbar-links a:hover {
+      background-color: #d48ca3;
+    }
+
+    .navbar-toggle {
+      display: none;
+      font-size: 30px;
+      background: none;
+      border: none;
+      color: white;
+      cursor: pointer;
+    }
+
+    @media screen and (max-width: 768px) {
+      .navbar-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #d48ca3;
+        position: absolute;
+        top: 60px;
+        left: 0;
+      }
+
+      .navbar-links.active {
+        display: flex;
+      }
+
+      .navbar-links a {
+        margin: 10px 0;
+        width: 100%;
+        text-align: center;
+      }
+
+      .navbar-toggle {
+        display: block;
+      }
+    }
+    h2 {
+      color: #d48ca3;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav>
+    <nav>
+      <button class="navbar-toggle" id="navbar-toggle">&#9776;</button>
+      <div class="navbar-links" id="navbar-links">
+        <a href="index.html">Home</a>
+        <a href="romanian-flowers.html">Romanian Flowers</a>
+        <a href="roses.html">Rose</a>
+        <a href="sunflower.html">Sunflower</a>
+        <a href="orchid.html">Orchid</a>
+        <a href="tulip.html">Tulip</a>
+      </div>
+    </nav>
+    </nav>
+
+<header>
+  <h1>🌷 The Timeless Beauty of the Tulip</h1>
+  <p>Elegance and simplicity in a single flower.</p>
+</header>
+
+<main>
+
+  <section class="section">
+    <div class="section-text">
+      <h2>History and Origin</h2>
+      <p>The tulip is native to Central Asia and was first cultivated by the Turks as early as 1000 AD. It was later introduced to Europe through the Ottoman Empire. The tulip became particularly famous in the Netherlands during the 17th century, during a period known as "Tulip Mania," when the flower's popularity caused prices to soar dramatically, becoming one of the first recorded economic bubbles.</p>
+    </div>
+    <img src="images/tulip1.jpg" alt="Colorful tulip field">
+  </section>
+
+  <section class="section">
+    <img src="images/tulip2.jpg" alt="Pink tulips close-up">
+    <div class="section-text">
+      <h2>Botanical Characteristics</h2>
+      <p>Tulips belong to the Liliaceae family. There are around 75 wild species and over 3,000 varieties that have been cultivated. Their distinctive cup-shaped blooms come in almost every color of the rainbow. Most tulips bloom in the spring, and they thrive in climates with cool winters and dry summers, making them a favorite in gardens worldwide.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-text">
+      <h2>Symbolism and Cultural Impact</h2>
+      <p>Throughout history, tulips have symbolized perfect love, rebirth, and charity. Red tulips represent deep love, while yellow tulips once meant hopeless love but now commonly symbolize cheerfulness. In Persian literature, tulips are associated with the beauty of life and martyrdom, appearing frequently in poetry and art.</p>
+    </div>
+    <img src="images/tulip3.jpg" alt="Field of red tulips">
+  </section>
+
+  <section class="section">
+    <img src="images/tulip4.jpg" alt="Traditional Dutch tulip garden">
+    <div class="section-text">
+      <h2>Tulips in Romania</h2>
+      <p>In Romania, tulips are celebrated each spring through various floral festivals and exhibitions. Towns like Pitești organize "Simfonia Lalelelor" ("The Symphony of Tulips"), a famous flower festival dedicated to the tulip. Romanian gardens proudly feature numerous varieties, blending Dutch influences with local traditions and love for colorful, elegant flowers.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>Made with love 🌸 | Coquette Flowers</p>
+</footer>
+
+<!-- JavaScript for navbar toggle -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const toggleButton = document.getElementById('navbar-toggle');
+    const navbarLinks = document.getElementById('navbar-links');
+
+    toggleButton.addEventListener('click', function() {
+      navbarLinks.classList.toggle('active');
+    });
+  });
+</script>
+
+</body>
+</html>

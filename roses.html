@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rose | Coquette Flowers</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <style>
+    /* Same styling from the homepage, so everything fits */
+    .flower-section {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      background: rgba(255, 250, 252, 0.85);
+      border-radius: 20px;
+      margin: 2rem 0;
+      padding: 2rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    }
+    .flower-section img {
+      width: 300px;
+      height: auto;
+      border-radius: 20px;
+      object-fit: cover;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .flower-text {
+      flex: 1;
+      padding: 1rem;
+    }
+    .flower-text h2 {
+      color: #d48ca3;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .flower-text p {
+      margin-bottom: 1rem;
+      line-height: 1.7;
+    }
+    .flower-section.reverse {
+      flex-direction: row-reverse;
+    }
+    @media (max-width: 768px) {
+      .flower-section,
+      .flower-section.reverse {
+        flex-direction: column;
+        text-align: center;
+      }
+      .flower-section img {
+        margin-bottom: 1rem;
+      }
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #d48ca3;
+      padding: 10px 20px;
+      position: relative;
+    }
+
+    .navbar-links {
+      display: flex;
+      align-items: center;
+    }
+
+    .navbar-links a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 1.1rem;
+      padding: 8px 12px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .navbar-links a:hover {
+      background-color: #d48ca3;
+    }
+
+    .navbar-toggle {
+      display: none;
+      font-size: 30px;
+      background: none;
+      border: none;
+      color: white;
+      cursor: pointer;
+    }
+
+    @media screen and (max-width: 768px) {
+      .navbar-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #d48ca3;
+        position: absolute;
+        top: 60px;
+        left: 0;
+      }
+
+      .navbar-links.active {
+        display: flex;
+      }
+
+      .navbar-links a {
+        margin: 10px 0;
+        width: 100%;
+        text-align: center;
+      }
+
+      .navbar-toggle {
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <nav>
+        <button class="navbar-toggle" id="navbar-toggle">
+            ☰
+          </button>
+        
+          <!-- Links -->
+          <div class="navbar-links" id="navbar-links">
+            <a href="index.html">Home</a>
+            <a href="romanian-flowers.html">Romanian Flowers</a>
+            <a href="roses.html">Rose</a>
+            <a href="sunflower.html">Sunflower</a>
+            <a href="orchid.html">Orchid</a>
+            <a href="tulip.html">Tulip</a>
+          </div>
+        </div>
+      </nav>
+      </nav>
+  </nav>
+
+  <header>
+    <h1>The Rose 🌹</h1>
+    <p>The eternal symbol of love, beauty, and romance</p>
+  </header>
+
+  <main>
+    <div class="flower-section">
+      <img src="images/rose1.jpg" alt="Rose garden">
+      <div class="flower-text">
+        <h2>Symbolism of the Rose</h2>
+        <p>The rose has been a symbol of love, beauty, and passion for centuries. Whether in Greek mythology or in modern-day floral bouquets, the rose stands as the ultimate representation of romance and devotion.</p>
+        <p>Each color of rose conveys a distinct message. Red roses symbolize romantic love, white roses convey purity and innocence, while yellow roses represent friendship. The rose’s elegant form and delicate fragrance have inspired poets, artists, and lovers around the world.</p>
+      </div>
+    </div>
+
+    <div class="flower-section reverse">
+      <img src="images/rose2.jpg" alt="Red Rose Closeup">
+      <div class="flower-text">
+        <h2>The History of the Rose</h2>
+        <p>The rose has a deep-rooted history dating back to ancient civilizations. Egyptians cultivated roses for their beauty, and the Romans used them to celebrate the goddess Venus. In the 18th century, roses became highly sought after in Europe and were carefully cultivated to create hybrids with even more vibrant colors.</p>
+        <p>In modern times, roses are not only a key flower in gardens but also have a place in rituals, festivals, and celebrations worldwide, including Valentine’s Day, where roses are exchanged as tokens of love and admiration.</p>
+      </div>
+    </div>
+
+    <div class="flower-section">
+      <img src="images/rose3.jpg" alt="Rose petals">
+      <div class="flower-text">
+        <h2>The Rose in Art and Literature</h2>
+        <p>Roses have been immortalized in art, literature, and culture for centuries. Shakespeare, in his famous play *Romeo and Juliet*, famously posed the question: "What's in a name? That which we call a rose by any other name would smell as sweet." This illustrates how deeply roses are woven into the fabric of human expression and symbolism.</p>
+        <p>The rose has also been a frequent subject in visual arts. From Van Gogh’s expressive paintings to Renaissance works, the rose has symbolized everything from love to tragedy, making it an evergreen muse for artists throughout history.</p>
+      </div>
+    </div>
+
+    <div class="flower-section reverse">
+      <img src="images/rose4.jpg" alt="Rose bouquet">
+      <div class="flower-text">
+        <h2>Growing Roses</h2>
+        <p>Roses are incredibly versatile flowers, thriving in many climates and soil types. They require well-drained soil and plenty of sunlight to grow to their full potential. While traditional rose bushes may require more care, modern hybrid roses have been bred to be more resistant to pests and diseases.</p>
+        <p>Roses can be cultivated in gardens, containers, or even indoors. Whether you have a large garden or just a small balcony, growing roses can bring a touch of elegance and beauty to any space.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    Made with love 🌸 | Coquette Flowers
+  </footer>
+  <script>
+       document.addEventListener('DOMContentLoaded', function() {
+    const toggleButton = document.getElementById('navbar-toggle');
+    const navbarLinks = document.getElementById('navbar-links');
+
+    toggleButton.addEventListener('click', function() {
+      navbarLinks.classList.toggle('active');
+    });
+  });
+
+  </script>
+</body>
+</html>

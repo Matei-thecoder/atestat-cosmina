@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sunflower | Coquette Flowers</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .section {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 40px;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+    .section img {
+      width: 45%;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    .section-text {
+      width: 45%;
+      font-size: 1.1rem;
+      color: #333;
+    }
+    h2 {
+      color: #d48ca3;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    @media (max-width: 768px) {
+      .section {
+        flex-direction: column;
+        text-align: center;
+      }
+      .section img, .section-text {
+        width: 90%;
+      }
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #d48ca3;
+      padding: 10px 20px;
+      position: relative;
+    }
+
+    .navbar-links {
+      display: flex;
+      align-items: center;
+    }
+
+    .navbar-links a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 1.1rem;
+      padding: 8px 12px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .navbar-links a:hover {
+      background-color: #d48ca3;
+    }
+
+    .navbar-toggle {
+      display: none;
+      font-size: 30px;
+      background: none;
+      border: none;
+      color: white;
+      cursor: pointer;
+    }
+
+    @media screen and (max-width: 768px) {
+      .navbar-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #d48ca3;
+        position: absolute;
+        top: 60px;
+        left: 0;
+      }
+      .navbar-toggle{
+        margin-bottom: 10px;
+      }
+
+      .navbar-links.active {
+        display: flex;
+      }
+
+      .navbar-links a {
+        margin: 10px 0;
+        width: 100%;
+        text-align: center;
+      }
+
+      .navbar-toggle {
+        display: block;
+        padding-bottom: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+ <nav>
+<nav>
+  <button class="navbar-toggle" id="navbar-toggle">&#9776;</button>
+  <div class="navbar-links" id="navbar-links">
+    <a href="index.html">Home</a>
+    <a href="romanian-flowers.html">Romanian Flowers</a>
+    <a href="roses.html">Rose</a>
+    <a href="sunflower.html">Sunflower</a>
+    <a href="orchid.html">Orchid</a>
+    <a href="tulip.html">Tulip</a>
+  </div>
+</nav>
+</nav>
+
+<header>
+  <h1>🌻 The Magnificent Sunflower</h1>
+  <p>A symbol of joy, loyalty, and the beauty of nature.</p>
+</header>
+
+<main>
+
+  <section class="section">
+    <div class="section-text">
+      <h2>Origins and Meaning</h2>
+      <p>The sunflower, native to North America, has long been admired for its bold, sunny appearance. Symbolizing adoration, loyalty, and longevity, it holds a special place in cultures around the world. The plant was first domesticated by Native American tribes, who used it for food, oil, and dye.</p>
+    </div>
+    <img src="images/sunflower1.jpg" alt="Bright sunflower field">
+  </section>
+
+  <section class="section">
+    <img src="images/sunflower2.jpg" alt="Sunflower close-up">
+    <div class="section-text">
+      <h2>Botanical Characteristics</h2>
+      <p>Sunflowers belong to the Asteraceae family. Their scientific name, *Helianthus annuus*, reflects their nature: "helios" meaning sun and "anthos" meaning flower. They can grow impressively tall — some over 3 meters! Each flower head is composed of thousands of tiny flowers, called florets, working together as one.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-text">
+      <h2>Cultural Significance</h2>
+      <p>Across cultures, sunflowers symbolize positivity and strength. In China, they represent longevity and good luck. In Victorian England, gifting sunflowers meant loyalty and admiration. The famous artist Vincent van Gogh immortalized their beauty in his celebrated "Sunflowers" painting series, which remains iconic to this day.</p>
+    </div>
+    <img src="images/sunflower3.jpg" alt="Artistic sunflower painting">
+  </section>
+
+  <section class="section">
+    <img src="images/sunflower4.jpg" alt="Sunflower field during sunset">
+    <div class="section-text">
+      <h2>Sunflowers in Romania</h2>
+      <p>Romania holds vast fields of blooming sunflowers, especially in the southern plains. Every summer, landscapes become rivers of gold under the sun. Romanian farmers value sunflowers for their seeds and oil, making the country one of Europe's largest sunflower oil producers. Their presence in rural festivals and traditional art highlights their cultural importance.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>Made with love 🌸 | Coquette Flowers</p>
+</footer>
+
+<!-- JavaScript for navbar toggle -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const toggleButton = document.getElementById('navbar-toggle');
+    const navbarLinks = document.getElementById('navbar-links');
+
+    toggleButton.addEventListener('click', function() {
+      navbarLinks.classList.toggle('active');
+    });
+  });
+</script>
+
+</body>
+</html>
